@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO Primary Metadata -->
+  <title>Pankaj Upadhyay | Python & Django Developer | 3D Portfolio</title>
+  <meta name="description" content="Portfolio of Pankaj Upadhyay, Python & Django Developer. Discover full-stack web applications including the award-winning HemoCampus, technical skills, and verified resume.">
+  <meta name="keywords" content="Pankaj Upadhyay, Python Developer, Django Developer, Full-Stack Developer, HemoCampus, Blood Bank Management System, Web Developer Portfolio, Kushinagar">
+  <meta name="author" content="Pankaj Upadhyay">
+  <meta name="theme-color" content="#07090e">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://code-pankaj-dev.github.io/">
+  <meta property="og:title" content="Pankaj Upadhyay | Python & Django Developer">
+  <meta property="og:description" content="Explore full-stack web projects including HemoCampus (Best Project Award), backend Django architecture, and verified resume.">
+  <meta property="og:image" content="assets/images/pankaj_photo.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pankaj Upadhyay | Python & Django Developer">
+  <meta name="twitter:description" content="Explore full-stack web projects including HemoCampus (Best Project Award), backend Django architecture, and verified resume.">
+  <meta name="twitter:image" content="assets/images/pankaj_photo.jpg">
+
+  <!-- Favicon (PU Monogram Inline SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%2300f2fe'/%3E%3Cstop offset='100%25' stop-color='%238a2be2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%2307090e'/%3E%3Crect x='2' y='2' width='60' height='60' rx='14' fill='none' stroke='url(%23g)' stroke-width='3'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='900' font-size='26' fill='url(%23g)'%3EPU%3C/text%3E%3C/svg%3E">
+  <link rel="alternate icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pankaj Upadhyay",
+    "jobTitle": "Python & Django Developer",
+    "description": "Enthusiastic and detail-oriented Computer Science professional with a solid foundation in Python, Django, SQLite, and web development.",
+    "email": "mailto:pankajupadhyay.dev@gmail.com",
+    "telephone": "+917393834932",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kushinagar",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "274302",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://github.com/Code-Pankaj-dev",
+      "https://www.linkedin.com/in/pankaj-dev12"
+    ],
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "Mahamaya Polytechnic of Information Technology Bansi Siddharth Nagar"
+      },
+      {
+        "@type": "EducationalOrganization",
+        "name": "LMIC Janki Nagar Seorahi Tamkuhi Raj, Kushinagar"
+      }
+    ],
+    "knowsAbout": ["Python", "Django", "SQLite", "HTML5", "CSS3", "JavaScript", "Git", "GitHub", "Backend Development"],
+    "award": "Best Project Award (HemoCampus Blood Bank Management System)"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Ambient Interactive 3D Particle Canvas -->
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       Header & Navigation
+       ======================================================================== -->
+  <header class="navbar" role="banner">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Pankaj Upadhyay Portfolio Home">
+        <div class="logo-badge" aria-hidden="true">PU</div>
+        <div class="logo-text">
+          <span class="logo-name">Pankaj Upadhyay</span>
+          <span class="logo-role">Python &amp; Django</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav id="navMenu" class="nav-menu" role="navigation" aria-label="Main Navigation">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#journey" class="nav-link">Journey</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#resume" class="nav-link">Resume</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Action Controls -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <!-- Sun Icon (for dark theme) -->
+          <svg class="theme-icon-sun" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <path stroke-linecap="round" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+          </svg>
+          <!-- Moon Icon (for light theme) -->
+          <svg class="theme-icon-moon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Navbar Resume Quick CTA -->
+        <a href="#resume" class="btn btn-secondary btn-sm">
+          <span>Resume</span>
+          <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
+          </svg>
+        </a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Main Content Container
+       ======================================================================== -->
+  <main id="main-content">
+
+    <!-- ----------------------------------------------------------------------
+         Section 1: Hero (Custom 3D Experience)
+         ---------------------------------------------------------------------- -->
+    <section id="home" class="hero-section" aria-label="Introduction and Overview">
+      <div class="container hero-grid">
+        <!-- Hero Content (Left) -->
+        <div class="hero-content">
+          <div class="status-pill">
+            <span class="pulse-dot" aria-hidden="true"></span>
+            <span>Available for Internships &amp; Opportunities</span>
+          </div>
+
+          <div class="hero-greeting">
+            <span>&lt;developer&gt;</span>
+            <span>Hello, I am</span>
+          </div>
+
+          <h1 class="hero-name">
+            <span class="gradient-text">Pankaj Upadhyay</span>
+          </h1>
+
+          <div class="hero-title-rotator" aria-live="polite">
+            <span class="rotator-prefix">I build as a</span>
+            <span id="roleRotator" class="rotator-dynamic">Python &amp; Django Developer</span>
+          </div>
+
+          <p class="hero-bio">
+            Enthusiastic and detail-oriented Computer Science professional with a solid foundation in Python, Django, SQLite, and modern web technologies. Architect of the award-winning <strong>HemoCampus</strong> blood bank management system, dedicated to writing clean, maintainable backend code and engineering dependable digital solutions.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Projects</span>
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+
+            <a href="assets/documents/Pankaj_Upadhyay_Resume.pdf" class="btn btn-secondary" download="Pankaj_Upadhyay_Resume.pdf" title="Download Pankaj Upadhyay Resume (PDF)">
+              <span>Download Resume</span>
+              <svg class="btn-icon btn-icon-down" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+
+            <button id="heroViewResumeBtn" class="btn btn-ghost" title="Preview Resume in Modal">
+              <span>View Resume</span>
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/Code-Pankaj-dev" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/pankaj-dev12" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.97 0 1.75-.79 1.75-1.76s-.78-1.75-1.75-1.75a1.75 1.75 0 0 0-1.75 1.75c0 .97.78 1.76 1.75 1.76m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="mailto:pankajupadhyay.dev@gmail.com" class="social-link" title="Direct Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+              </svg>
+              <span>Email</span>
+            </a>
+
+            <span class="social-link" title="Verified Location">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              <span>Kushinagar, UP, India</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Hero 3D Stage (Right) -->
+        <div id="heroStage" class="hero-stage">
+          <div id="heroCard3D" class="hero-card-3d">
+            <!-- Ambient Glow -->
+            <div class="stage-glow" aria-hidden="true"></div>
+
+            <!-- Portrait Frame -->
+            <div class="portrait-frame">
+              <div class="portrait-inner">
+                <picture>
+                  <source type="image/webp" srcset="assets/images/pankaj_photo.webp">
+                  <img src="assets/images/pankaj_photo.jpg" alt="Pankaj Upadhyay - Python &amp; Django Developer" class="portrait-img" width="400" height="500" loading="eager">
+                </picture>
+              </div>
+
+              <!-- Bottom Highlight Pill on Portrait -->
+              <div class="portrait-footer-badge">
+                <svg class="badge-trophy-icon" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L9 4.323V3a1 1 0 011-1z" clip-rule="evenodd" />
+                </svg>
+                <span>Best Project Award &bull; HemoCampus</span>
+              </div>
+            </div>
+
+            <!-- 3D Floating Tech Badges (Depth Orbits) -->
+            <div class="tech-badge-orbit orbit-python" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.006 2.75h5.813v.825H3.896S0 5.79 0 11.908c0 6.12 3.4 5.923 3.4 5.923h2.03v-2.859s-.11-3.4 3.342-3.4h5.753s3.23.055 3.23-3.136V2.656S18.27 0 11.914 0zm-3.34 1.848a1.05 1.05 0 110 2.1 1.05 1.05 0 010-2.1zM12.086 24c6.094 0 5.714-2.656 5.714-2.656l-.006-2.75h-5.813v-.825h8.123s3.896.442 3.896-5.677c0-6.12-3.4-5.923-3.4-5.923h-2.03v2.859s.11 3.4-3.342 3.4H9.475s-3.23-.055-3.23 3.136v5.776S5.73 24 12.086 24zm3.34-1.848a1.05 1.05 0 110-2.1 1.05 1.05 0 010-2.1z"/>
+              </svg>
+              <span>Python 3</span>
+            </div>
+
+            <div class="tech-badge-orbit orbit-django" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M11.146 0h3.911v18.528c-1.826.357-3.214.477-4.667.477-4.405 0-6.619-1.928-6.619-5.738 0-3.667 2.262-5.905 5.762-5.905.571 0 1.071.048 1.619.167V0h-.006zm0 11.333a4.264 4.264 0 00-1.357-.19c-1.833 0-2.857 1.048-2.857 2.928 0 1.953.976 2.953 2.857 2.953.429 0 .881-.048 1.357-.143v-5.548zM16.48 7.595h3.905v16.143H16.48V7.595zM16.48.262h3.905v4.286H16.48V.262z"/>
+              </svg>
+              <span>Django Web</span>
+            </div>
+
+            <div class="tech-badge-orbit orbit-sqlite" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+              <span>SQLite DBMS</span>
+            </div>
+
+            <div class="tech-badge-orbit orbit-js" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M3 3h18v18H3V3zm11.5 13.5c0 .83-.67 1.5-1.5 1.5H9.5a1.5 1.5 0 01-1.5-1.5v-1h2v.5h2v-3h-2a2 2 0 01-2-2v-1a2 2 0 012-2H13a1.5 1.5 0 011.5 1.5v1h-2V7.5h-2v3h2a2 2 0 012 2v4zm6-2c0 1.1-.9 2-2 2h-3.5v-9H17a2 2 0 012 2v1h-2v-.5h-1.5v2.5H17a2 2 0 012 2v2z"/>
+              </svg>
+              <span>JS &amp; CSS3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         Section 2: About Me
+         ---------------------------------------------------------------------- -->
+    <section id="about" class="section" aria-label="About Pankaj Upadhyay">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">About Me</div>
+          <h2 class="section-title">Engineering Mindset &amp; <span class="gradient-text">Practical Solutions</span></h2>
+          <p class="section-desc">Grounded in computer science theory and driven by hands-on development in Python and full-stack web applications.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- About Text Content -->
+          <div class="about-text-content">
+            <p class="lead-p">
+              I am a dedicated Computer Science student and software developer based in Kushinagar, Uttar Pradesh, currently pursuing my Diploma in Computer Science &amp; Engineering at Mahamaya Polytechnic of Information Technology, Bansi, Siddharth Nagar.
+            </p>
+            <p>
+              My journey began with a strong analytical foundation in Science (PCB) from the UP Board (60%), which nurtured my interest in systematic inquiry, mathematical reasoning, and technological architecture. Choosing Computer Science was a natural progression into solving practical real-world problems through logic and code.
+            </p>
+            <p>
+              I concentrate on the <strong>Python and Django</strong> ecosystem, writing modular backend logic, structuring relational database schemas with SQLite, and developing clean, accessible web interfaces. Rather than theoretical exercises, I believe in constructing complete, reliable applications—demonstrated by my featured academic project <strong>HemoCampus</strong>, which received the <strong>Best Project Award</strong> for its end-to-end implementation of blood bank donor records, inventory tracking, and hospital request workflows.
+            </p>
+
+            <div class="about-cards-grid">
+              <div class="strength-card">
+                <div class="strength-icon">
+                  <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                  </svg>
+                </div>
+                <h3 class="strength-title">Backend Architecture</h3>
+                <p class="strength-desc">Structured Django MVT design, ORM database querying, session authentication, and clean CRUD logic.</p>
+              </div>
+
+              <div class="strength-card">
+                <div class="strength-icon">
+                  <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <h3 class="strength-title">Clean Frontend</h3>
+                <p class="strength-desc">Semantic HTML5, modern CSS3 layouts, responsive flex/grid systems, and interactive vanilla JavaScript.</p>
+              </div>
+
+              <div class="strength-card">
+                <div class="strength-icon">
+                  <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                  </svg>
+                </div>
+                <h3 class="strength-title">Data Integrity</h3>
+                <p class="strength-desc">Relational database modeling with SQLite, foreign key constraints, table normalization, and automated migrations.</p>
+              </div>
+
+              <div class="strength-card">
+                <div class="strength-icon">
+                  <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                  </svg>
+                </div>
+                <h3 class="strength-title">Git &amp; Version Control</h3>
+                <p class="strength-desc">Systematic branching, clean commit histories, repository hosting, and code organization on GitHub.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Factsheet Sidebar -->
+          <div class="glass-card factsheet-card">
+            <h3 class="factsheet-title">
+              <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="color: var(--accent-cyan);" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+              </svg>
+              <span>Verified Snapshot</span>
+            </h3>
+
+            <ul class="factsheet-list">
+              <li class="factsheet-item">
+                <span class="factsheet-label">Full Name</span>
+                <span class="factsheet-val">Pankaj Upadhyay</span>
+              </li>
+              <li class="factsheet-item">
+                <span class="factsheet-label">Primary Specialization</span>
+                <span class="factsheet-val">Python &amp; Django Development</span>
+              </li>
+              <li class="factsheet-item">
+                <span class="factsheet-label">Current Education</span>
+                <span class="factsheet-val">Diploma in Computer Science &amp; Engg.</span>
+              </li>
+              <li class="factsheet-item">
+                <span class="factsheet-label">Institution</span>
+                <span class="factsheet-val">Mahamaya Polytechnic of IT, Siddharth Nagar</span>
+              </li>
+              <li class="factsheet-item">
+                <span class="factsheet-label">Location</span>
+                <span class="factsheet-val">Kushinagar, UP 274302, India</span>
+              </li>
+              <li class="factsheet-item">
+                <span class="factsheet-label">Email</span>
+                <span class="factsheet-val"><a href="mailto:pankajupadhyay.dev@gmail.com">pankajupadhyay.dev@gmail.com</a></span>
+              </li>
+              <li class="factsheet-item">
+                <span class="factsheet-label">Professional Status</span>
+                <span class="factsheet-val" style="color: #10b981;">Open for Developer Internships</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         Section 3: Technical Skills
+         ---------------------------------------------------------------------- -->
+    <section id="skills" class="section" aria-label="Technical Skills and Tooling">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Core Capabilities</div>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills &amp; Tooling</span></h2>
+          <p class="section-desc">Strictly verified technical skills derived from hands-on development and coursework. No fabricated progress bars or imaginary percentages.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-nav" role="tablist" aria-label="Filter Skills by Category">
+          <button class="skill-tab-btn active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+          <button class="skill-tab-btn" data-filter="backend" role="tab" aria-selected="false">Backend Development</button>
+          <button class="skill-tab-btn" data-filter="frontend" role="tab" aria-selected="false">Frontend Development</button>
+          <button class="skill-tab-btn" data-filter="database" role="tab" aria-selected="false">Database &amp; Tools</button>
+          <button class="skill-tab-btn" data-filter="core" role="tab" aria-selected="false">Core Computer Science</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+          <!-- Python -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.006 2.75h5.813v.825H3.896S0 5.79 0 11.908c0 6.12 3.4 5.923 3.4 5.923h2.03v-2.859s-.11-3.4 3.342-3.4h5.753s3.23.055 3.23-3.136V2.656S18.27 0 11.914 0zm-3.34 1.848a1.05 1.05 0 110 2.1 1.05 1.05 0 010-2.1zM12.086 24c6.094 0 5.714-2.656 5.714-2.656l-.006-2.75h-5.813v-.825h8.123s3.896.442 3.896-5.677c0-6.12-3.4-5.923-3.4-5.923h-2.03v2.859s.11 3.4-3.342 3.4H9.475s-3.23-.055-3.23 3.136v5.776S5.73 24 12.086 24zm3.34-1.848a1.05 1.05 0 110-2.1 1.05 1.05 0 010-2.1z"/>
+                </svg>
+              </div>
+              <span class="skill-category-badge">Backend</span>
+            </div>
+            <h3 class="skill-name">Python</h3>
+            <p class="skill-desc">Object-oriented programming, data structures, modular application design, algorithm implementation, and script automation.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">OOP</span>
+              <span class="skill-tag">Data Structures</span>
+              <span class="skill-tag">Logic &amp; Algorithmic Flow</span>
+            </div>
+          </div>
+
+          <!-- Django -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M11.146 0h3.911v18.528c-1.826.357-3.214.477-4.667.477-4.405 0-6.619-1.928-6.619-5.738 0-3.667 2.262-5.905 5.762-5.905.571 0 1.071.048 1.619.167V0h-.006zm0 11.333a4.264 4.264 0 00-1.357-.19c-1.833 0-2.857 1.048-2.857 2.928 0 1.953.976 2.953 2.857 2.953.429 0 .881-.048 1.357-.143v-5.548zM16.48 7.595h3.905v16.143H16.48V7.595zM16.48.262h3.905v4.286H16.48V.262z"/>
+                </svg>
+              </div>
+              <span class="skill-category-badge">Framework</span>
+            </div>
+            <h3 class="skill-name">Django</h3>
+            <p class="skill-desc">Model-View-Template (MVT) architecture, Django ORM, authentication and authorization, form processing, and secure URL routing.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">MVT Pattern</span>
+              <span class="skill-tag">Django ORM</span>
+              <span class="skill-tag">User Auth</span>
+              <span class="skill-tag">CRUD APIs</span>
+            </div>
+          </div>
+
+          <!-- SQLite -->
+          <div class="skill-card" data-category="database">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                </svg>
+              </div>
+              <span class="skill-category-badge">Database</span>
+            </div>
+            <h3 class="skill-name">SQLite</h3>
+            <p class="skill-desc">Relational database schemas, table normalization, primary &amp; foreign key relationships, queries, and automated migrations.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Relational Schemas</span>
+              <span class="skill-tag">Foreign Keys</span>
+              <span class="skill-tag">Migrations</span>
+            </div>
+          </div>
+
+          <!-- HTML5 -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0L1.75 3.4l1.55 17.2L12 24l8.7-3.4 1.55-17.2L12 0zm6.8 6.4h-13.6l.3 3.4h13l-.7 8-6.8 2.2-6.8-2.2-.4-4.8h3.4l.2 2.2 3.6 1.1 3.6-1.1.4-4.5H5.1L4.3 3h15.4l-.9 3.4z"/>
+                </svg>
+              </div>
+              <span class="skill-category-badge">Frontend</span>
+            </div>
+            <h3 class="skill-name">HTML5</h3>
+            <p class="skill-desc">Semantic document structuring, accessible landmarks, SEO metadata, form validation, and modern web standards.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Semantic HTML</span>
+              <span class="skill-tag">Accessibility (ARIA)</span>
+              <span class="skill-tag">SEO Standards</span>
+            </div>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0zm17 5.5H5.5l.4 4.5h11.8l-.5 5.5-4.2 1.4-4.2-1.4-.3-3.2H5.1l.5 6 6.4 2.1 6.4-2.1 1.1-12.8z"/>
+                </svg>
+              </div>
+              <span class="skill-category-badge">Frontend</span>
+            </div>
+            <h3 class="skill-name">CSS3</h3>
+            <p class="skill-desc">Responsive layouts with Flexbox and CSS Grid, custom properties, glassmorphism styling, CSS 3D transforms, and fluid media queries.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Flexbox &amp; Grid</span>
+              <span class="skill-tag">CSS 3D Transforms</span>
+              <span class="skill-tag">Dark/Light Themes</span>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M0 0h24v24H0z" fill="none"/>
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm4 0h-2v-4h2v4z"/>
+                </svg>
+              </div>
+              <span class="skill-category-badge">Frontend</span>
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <p class="skill-desc">Vanilla ES6+ programming, DOM manipulation, asynchronous events, interactive animations, and responsive UI behaviors.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Vanilla ES6+</span>
+              <span class="skill-tag">DOM Manipulation</span>
+              <span class="skill-tag">Async Programming</span>
+            </div>
+          </div>
+
+          <!-- Git & GitHub -->
+          <div class="skill-card" data-category="database">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </div>
+              <span class="skill-category-badge">Tools</span>
+            </div>
+            <h3 class="skill-name">Git &amp; GitHub</h3>
+            <p class="skill-desc">Distributed version control, branch management, merge conflict resolution, repository workflows, and code documentation.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Branching</span>
+              <span class="skill-tag">Version Tracking</span>
+              <span class="skill-tag">Remote Repositories</span>
+            </div>
+          </div>
+
+          <!-- Core CS Foundations -->
+          <div class="skill-card" data-category="core">
+            <div class="skill-card-top">
+              <div class="skill-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                </svg>
+              </div>
+              <span class="skill-category-badge">Theory &amp; Method</span>
+            </div>
+            <h3 class="skill-name">Computer Science Foundations</h3>
+            <p class="skill-desc">Data Structures &amp; Algorithms (DSA), Object-Oriented Software Engineering, DBMS principles, and secure web application development.</p>
+            <div class="skill-tags">
+              <span class="skill-tag">Data Structures</span>
+              <span class="skill-tag">Algorithms</span>
+              <span class="skill-tag">DBMS</span>
+              <span class="skill-tag">Software Engg.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         Section 4: Featured Projects
+         ---------------------------------------------------------------------- -->
+    <section id="projects" class="section" aria-label="Featured Projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Featured Work</div>
+          <h2 class="section-title">Engineered <span class="gradient-text">Applications</span></h2>
+          <p class="section-desc">Practical, fully implemented web systems showcasing backend database architecture and responsive frontend engineering.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: HemoCampus (Blood Bank Management System) -->
+          <article class="project-card featured-award" aria-labelledby="proj-hemocampus-title">
+            <!-- Visual Illustration Side -->
+            <div class="project-visual-side">
+              <div class="project-svg-wrap">
+                <!-- Original Interactive SVG Illustration representing Blood Bank System -->
+                <svg class="project-svg-illustration" viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="HemoCampus Blood Bank Architecture Diagram">
+                  <defs>
+                    <linearGradient id="hcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#ef4444"/>
+                      <stop offset="100%" stop-color="#8a2be2"/>
+                    </linearGradient>
+                    <linearGradient id="panelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#141c2e"/>
+                      <stop offset="100%" stop-color="#0a0e18"/>
+                    </linearGradient>
+                  </defs>
+
+                  <!-- Background Panel -->
+                  <rect width="500" height="320" fill="url(#panelGrad)"/>
+
+                  <!-- Grid Lines -->
+                  <line x1="50" y1="50" x2="450" y2="50" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                  <line x1="50" y1="110" x2="450" y2="110" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                  <line x1="50" y1="170" x2="450" y2="170" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                  <line x1="50" y1="230" x2="450" y2="230" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+                  <!-- Central Blood Bank Icon / Flask -->
+                  <g transform="translate(60, 60)">
+                    <rect width="160" height="200" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(239, 68, 68, 0.4)" stroke-width="1.5"/>
+                    <text x="80" y="32" fill="#f1f5f9" font-family="monospace" font-size="12" font-weight="700" text-anchor="middle">BLOOD INVENTORY</text>
+                    
+                    <!-- Blood Type Matrix -->
+                    <!-- A+ -->
+                    <rect x="20" y="55" width="50" height="50" rx="8" fill="rgba(239, 68, 68, 0.15)" stroke="#ef4444" stroke-width="1"/>
+                    <text x="45" y="85" fill="#ef4444" font-family="sans-serif" font-weight="800" font-size="16" text-anchor="middle">A+</text>
+                    <!-- B+ -->
+                    <rect x="90" y="55" width="50" height="50" rx="8" fill="rgba(0, 242, 254, 0.15)" stroke="#00f2fe" stroke-width="1"/>
+                    <text x="115" y="85" fill="#00f2fe" font-family="sans-serif" font-weight="800" font-size="16" text-anchor="middle">B+</text>
+                    <!-- O+ -->
+                    <rect x="20" y="125" width="50" height="50" rx="8" fill="rgba(16, 185, 129, 0.15)" stroke="#10b981" stroke-width="1"/>
+                    <text x="45" y="155" fill="#10b981" font-family="sans-serif" font-weight="800" font-size="16" text-anchor="middle">O+</text>
+                    <!-- AB+ -->
+                    <rect x="90" y="125" width="50" height="50" rx="8" fill="rgba(245, 158, 11, 0.15)" stroke="#f59e0b" stroke-width="1"/>
+                    <text x="115" y="155" fill="#f59e0b" font-family="sans-serif" font-weight="800" font-size="16" text-anchor="middle">AB+</text>
+                  </g>
+
+                  <!-- Right Side: Flow & Cardiac Pulse Monitor -->
+                  <g transform="translate(250, 60)">
+                    <rect width="190" height="200" rx="12" fill="rgba(255,255,255,0.03)" stroke="rgba(0, 242, 254, 0.3)" stroke-width="1.5"/>
+                    <text x="95" y="32" fill="#00f2fe" font-family="monospace" font-size="12" font-weight="700" text-anchor="middle">HOSPITAL REQUESTS</text>
+                    
+                    <!-- ECG / Heartbeat Line -->
+                    <path d="M 15 80 L 50 80 L 65 50 L 80 110 L 95 65 L 105 90 L 120 80 L 175 80" fill="none" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round"/>
+                    
+                    <!-- Donor Activity Log -->
+                    <rect x="15" y="110" width="160" height="28" rx="6" fill="rgba(255,255,255,0.05)"/>
+                    <circle cx="28" cy="124" r="4" fill="#10b981"/>
+                    <text x="42" y="128" fill="#94a3b8" font-family="monospace" font-size="10">Donor Reg: Verified</text>
+
+                    <rect x="15" y="148" width="160" height="28" rx="6" fill="rgba(255,255,255,0.05)"/>
+                    <circle cx="28" cy="162" r="4" fill="#00f2fe"/>
+                    <text x="42" y="166" fill="#94a3b8" font-family="monospace" font-size="10">Dispatch: Emergency</text>
+                  </g>
+
+                  <!-- Bottom Status Bar -->
+                  <rect x="50" y="275" width="400" height="25" rx="6" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.08)"/>
+                  <text x="65" y="291" fill="#64748b" font-family="monospace" font-size="10">DJANGO 5.0 &bull; SQLITE3 ORM &bull; LIVE ON RENDER</text>
+                  <circle cx="430" cy="287" r="4" fill="#10b981"/>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Project Content Side -->
+            <div class="project-content-side">
+              <div class="project-top-meta">
+                <span class="project-badge-type">Full-Stack Academic Project</span>
+                <div class="award-badge-pill">
+                  <svg width="14" height="14" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L9 4.323V3a1 1 0 011-1z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Best Project Award</span>
+                </div>
+              </div>
+
+              <h3 id="proj-hemocampus-title" class="project-title">HemoCampus — Blood Bank Management System</h3>
+
+              <p class="project-summary">
+                A robust, web-based digital platform engineered to address critical healthcare logistics by streamlining blood donor management, live inventory tracking across blood groups, and urgent hospital requisitions.
+              </p>
+
+              <ul class="project-features-list">
+                <li class="project-feature-item">
+                  <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Comprehensive CRUD functionality for donor records, blood inventory stocks, and hospital requests.</span>
+                </li>
+                <li class="project-feature-item">
+                  <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Role-based secure authentication and session management built natively on Django.</span>
+                </li>
+                <li class="project-feature-item">
+                  <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Responsive, user-friendly interface constructed with HTML5, CSS3, and JavaScript.</span>
+                </li>
+              </ul>
+
+              <div class="project-tech-stack">
+                <span class="tech-chip">Python</span>
+                <span class="tech-chip">Django</span>
+                <span class="tech-chip">SQLite</span>
+                <span class="tech-chip">HTML5</span>
+                <span class="tech-chip">CSS3</span>
+                <span class="tech-chip">JavaScript</span>
+                <span class="tech-chip">Git &amp; GitHub</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://hemocampus.onrender.com/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" title="Launch HemoCampus Live Demo">
+                  <span>Live Demo</span>
+                  <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                    <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                  </svg>
+                </a>
+
+                <a href="https://github.com/Code-Pankaj-dev/HemoCampus" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="View HemoCampus on GitHub">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                  <span>GitHub Repository</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Python Learning Journey -->
+          <article class="project-card" aria-labelledby="proj-pythonjourney-title">
+            <!-- Visual Illustration Side -->
+            <div class="project-visual-side">
+              <div class="project-svg-wrap">
+                <!-- Original Interactive SVG Illustration representing Terminal & Algorithm Execution -->
+                <svg class="project-svg-illustration" viewBox="0 0 500 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Python Learning Journey Terminal Interface">
+                  <defs>
+                    <linearGradient id="termGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" stop-color="#0e131f"/>
+                      <stop offset="100%" stop-color="#07090e"/>
+                    </linearGradient>
+                  </defs>
+
+                  <!-- Terminal Window Box -->
+                  <rect width="500" height="320" fill="url(#termGrad)"/>
+                  
+                  <!-- Window Header Bar -->
+                  <rect x="0" y="0" width="500" height="36" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                  <circle cx="25" cy="18" r="5" fill="#ef4444"/>
+                  <circle cx="42" cy="18" r="5" fill="#f59e0b"/>
+                  <circle cx="59" cy="18" r="5" fill="#10b981"/>
+                  <text x="250" y="23" fill="#64748b" font-family="monospace" font-size="11" text-anchor="middle">bash — python3 main.py — git:main</text>
+
+                  <!-- Terminal Code Content -->
+                  <g transform="translate(30, 60)" font-family="monospace" font-size="12">
+                    <text x="0" y="20" fill="#00f2fe">&gt;&gt;&gt; from algorithms import BinarySearch, LinkedList</text>
+                    <text x="0" y="45" fill="#f1f5f9">&gt;&gt;&gt; dsa = LinkedList([10, 24, 38, 42, 60, 99])</text>
+                    <text x="0" y="70" fill="#f1f5f9">&gt;&gt;&gt; print(f"Target found at index: {dsa.search(42)}")</text>
+                    
+                    <!-- Terminal Output Box -->
+                    <rect x="0" y="90" width="440" height="50" rx="6" fill="rgba(0, 242, 254, 0.05)" stroke="rgba(0, 242, 254, 0.2)"/>
+                    <text x="15" y="112" fill="#10b981">[PASS] Target found at index: 3 (Time: O(log n))</text>
+                    <text x="15" y="130" fill="#94a3b8">Ran 14 unit tests across 6 modules in 0.042s &bull; OK</text>
+
+                    <!-- Git Commit log -->
+                    <text x="0" y="170" fill="#64748b">commit 8a4c19d — "Implement binary search tree &amp; stack tests"</text>
+                    <text x="0" y="195" fill="#64748b">commit 2b9e78f — "Refactor OOP inheritance hierarchy"</text>
+
+                    <!-- Interactive Command Prompt -->
+                    <text x="0" y="225" fill="#8a2be2">pankaj@dev:~/Python_Learning_Journey$</text>
+                    <rect x="315" y="213" width="8" height="15" fill="#00f2fe" opacity="0.8"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+            <!-- Project Content Side -->
+            <div class="project-content-side">
+              <div class="project-top-meta">
+                <span class="project-badge-type">Open-Source Code Repository</span>
+                <span class="tech-chip" style="color: var(--accent-cyan);">Algorithm Practice &amp; Foundations</span>
+              </div>
+
+              <h3 id="proj-pythonjourney-title" class="project-title">Python Learning Journey</h3>
+
+              <p class="project-summary">
+                A structured, version-controlled collection of Python code modules, algorithm implementations, object-oriented programming patterns, data structure challenges, and practical problem-solving exercises.
+              </p>
+
+              <ul class="project-features-list">
+                <li class="project-feature-item">
+                  <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Implementation of core data structures: arrays, linked lists, stacks, queues, and tree traversals.</span>
+                </li>
+                <li class="project-feature-item">
+                  <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Exploration of Object-Oriented Programming (OOP): inheritance, polymorphism, encapsulation, and abstractions.</span>
+                </li>
+                <li class="project-feature-item">
+                  <svg class="feature-check-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Documented codebase with clear commit progression and problem-solving logs on GitHub.</span>
+                </li>
+              </ul>
+
+              <div class="project-tech-stack">
+                <span class="tech-chip">Python 3</span>
+                <span class="tech-chip">Data Structures</span>
+                <span class="tech-chip">Algorithms</span>
+                <span class="tech-chip">OOP Design</span>
+                <span class="tech-chip">Git &amp; GitHub</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://github.com/Code-Pankaj-dev/Python_Learning_Journey" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" title="Explore Python Learning Journey on GitHub">
+                  <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                  </svg>
+                  <span>Explore on GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         Section 5: Development Journey (Timeline)
+         ---------------------------------------------------------------------- -->
+    <section id="journey" class="section" aria-label="Development Journey and Milestones">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Milestones</div>
+          <h2 class="section-title">Development <span class="gradient-text">Journey</span></h2>
+          <p class="section-desc">The authentic progression of my technical growth from scientific roots to full-stack Django engineering.</p>
+        </div>
+
+        <div class="journey-timeline">
+          <!-- Step 1: Scientific Foundations -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">
+              <div class="timeline-inner-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-date">03/2021 &ndash; 04/2023</span>
+                <h3 class="timeline-role">Science (PCB) &bull; Intermediate (Class XII)</h3>
+              </div>
+              <p class="timeline-org">LMIC Janki Nagar Seorahi Tamkuhi Raj, Kushinagar &bull; UP Board (60%)</p>
+              <p class="timeline-body">
+                Cultivated rigorous analytical discipline, scientific problem solving, and logical structure. This curiosity directly prompted my transition into software engineering and computational logic.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 2: Computer Science Diploma -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">
+              <div class="timeline-inner-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-date">08/2024 &ndash; Present</span>
+                <h3 class="timeline-role">Computer Science &amp; Engineering Diploma</h3>
+              </div>
+              <p class="timeline-org">Mahamaya Polytechnic of Information Technology, Bansi, Siddharth Nagar</p>
+              <p class="timeline-body">
+                Immersive curriculum covering Data Structures &amp; Algorithms, Object-Oriented Programming (Python), Relational Database Management Systems (SQLite/DBMS), Software Engineering, and Web Development.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 3: ASP.NET MVC Training -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">
+              <div class="timeline-inner-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-date">2025</span>
+                <h3 class="timeline-role">ASP.NET MVC Training</h3>
+              </div>
+              <p class="timeline-org">Claco Online Services Private Limited</p>
+              <p class="timeline-body">
+                Trained in architectural software patterns, Model-View-Controller design paradigms, server-side data handling, and structured web development lifecycle fundamentals.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 4: Python with Django Specialization -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">
+              <div class="timeline-inner-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-date">2026</span>
+                <h3 class="timeline-role">Python with Django Web Development</h3>
+              </div>
+              <p class="timeline-org">Mecatredz Software and Innovation Pvt. Ltd., Lucknow</p>
+              <p class="timeline-body">
+                Focused technical immersion in backend engineering with Django: model architecture, ORM query optimization, routing, security principles, authentication, and RESTful CRUD workflows.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 5: HemoCampus & Best Project Award -->
+          <div class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true">
+              <div class="timeline-inner-dot"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-date">05/2026 &ndash; Present</span>
+                <h3 class="timeline-role">HemoCampus &amp; Best Project Award</h3>
+              </div>
+              <p class="timeline-org">Web Developer (Academic Project) &bull; Siddharth Nagar, India</p>
+              <p class="timeline-body">
+                Architected and deployed the end-to-end HemoCampus blood bank system using Python, Django, SQLite, and responsive frontend technologies. Honored with the <strong>Best Project Award</strong> for technical reliability and practical community impact.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         Section 6: Education
+         ---------------------------------------------------------------------- -->
+    <section id="education" class="section" aria-label="Formal Education">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Academic Background</div>
+          <h2 class="section-title">Formal <span class="gradient-text">Education</span></h2>
+          <p class="section-desc">Academic qualifications and institutional coursework verified from my source credentials.</p>
+        </div>
+
+        <div class="education-grid">
+          <!-- Diploma in CSE -->
+          <div class="education-card">
+            <div class="education-top">
+              <div class="edu-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 14v7"/>
+                </svg>
+              </div>
+              <span class="edu-period">08/2024 &ndash; Present</span>
+            </div>
+
+            <h3 class="edu-degree">Computer Science &amp; Engineering | Diploma</h3>
+            <p class="edu-school">Mahamaya Polytechnic of Information Technology Bansi Siddharth Nagar</p>
+
+            <ul class="edu-details-list">
+              <li>
+                <strong>Core Coursework:</strong> Data Structures &amp; Algorithms, Object-Oriented Programming (Python), Database Management Systems (DBMS / SQLite), Web Development, and Software Engineering.
+              </li>
+              <li>
+                <strong>Technical Focus:</strong> Hands-on experience with frontend and backend development using HTML5, CSS3, JavaScript, Python, and Django frameworks.
+              </li>
+              <li>
+                <strong>Practical Implementation:</strong> Built full-stack web applications implementing user authentication, responsive design, relational database schemas, and complete CRUD operations.
+              </li>
+              <li>
+                <strong>Development Tools:</strong> Proficient in version control workflows using Git and GitHub for code management and project tracking.
+              </li>
+            </ul>
+          </div>
+
+          <!-- Intermediate (Class XII) -->
+          <div class="education-card">
+            <div class="education-top">
+              <div class="edu-icon-wrap" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                </svg>
+              </div>
+              <span class="edu-period">03/2021 &ndash; 04/2023</span>
+            </div>
+
+            <h3 class="edu-degree">Science (PCB) | Intermediate (Class XII)</h3>
+            <p class="edu-school">LMIC Janki Nagar Seorahi Tamkuhi Raj, Kushinagar</p>
+
+            <ul class="edu-details-list">
+              <li>
+                <strong>Examination Board:</strong> UP Board (Uttar Pradesh State Board)
+              </li>
+              <li>
+                <strong>Academic Percentage:</strong> 60%
+              </li>
+              <li>
+                <strong>Disciplinary Core:</strong> Physics, Chemistry, and Biology with emphasis on analytical reasoning, laboratory observation, and problem modeling.
+              </li>
+              <li>
+                <strong>Location:</strong> Kushinagar, Uttar Pradesh, India
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         Section 7: Training & Achievements
+         ---------------------------------------------------------------------- -->
+    <section id="training" class="section" aria-label="Training and Achievements">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Honors &amp; Programs</div>
+          <h2 class="section-title">Training &amp; <span class="gradient-text">Achievements</span></h2>
+          <p class="section-desc">Documented specialized training programs and verified project recognitions.</p>
+        </div>
+
+        <div class="training-grid">
+          <!-- Best Project Award -->
+          <div class="training-card award-highlight">
+            <span class="training-badge-year" style="color: #f59e0b;">HONOR &bull; 2026</span>
+            <h3 class="training-title" style="color: #fbbf24;">Best Project Award</h3>
+            <p class="training-org">Awarded for HemoCampus (Blood Bank Management System)</p>
+            <p class="training-desc">
+              Recognized for engineering a comprehensive, full-stack blood bank application featuring automated inventory tracking, hospital request dispatch, and responsive interface design.
+            </p>
+          </div>
+
+          <!-- Python with Django Training -->
+          <div class="training-card">
+            <span class="training-badge-year">SPECIALIZED TRAINING &bull; 2026</span>
+            <h3 class="training-title">Python with Django Web Development</h3>
+            <p class="training-org">Mecatredz Software and Innovation Pvt. Ltd., Lucknow</p>
+            <p class="training-desc">
+              Comprehensive industry-oriented training in Django web framework, model design, user authentication, RESTful APIs, and database connectivity.
+            </p>
+          </div>
+
+          <!-- ASP.NET MVC Training -->
+          <div class="training-card">
+            <span class="training-badge-year">TECHNICAL TRAINING &bull; 2025</span>
+            <h3 class="training-title">ASP.NET MVC Training</h3>
+            <p class="training-org">Claco Online Services Private Limited</p>
+            <p class="training-desc">
+              Structured training on Model-View-Controller architectural patterns, server-side execution cycles, and web application components.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         Section 8: Resume (Mandatory Interactive Integration)
+         ---------------------------------------------------------------------- -->
+    <section id="resume" class="section" aria-label="Resume and Credentials">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Official Credentials</div>
+          <h2 class="section-title">Verified <span class="gradient-text">Resume</span></h2>
+          <p class="section-desc">Access my official, verified curriculum vitae directly. View it on-screen or download a PDF copy for your records.</p>
+        </div>
+
+        <div class="resume-container-box">
+          <!-- Left Info Side -->
+          <div class="resume-info-side">
+            <div class="resume-tag">
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <span>Verified Document &bull; Format: PDF</span>
+            </div>
+
+            <h3 class="resume-heading">Ready for Engineering &amp; Internship Opportunities</h3>
+
+            <p class="resume-pitch">
+              My resume outlines my academic training in Computer Science &amp; Engineering, technical proficiencies across Python, Django, SQLite, and web development, and my practical work on the award-winning HemoCampus project.
+            </p>
+
+            <div class="resume-verified-badge">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+              <span>Authentic source file: <strong>Pankaj_Upadhyay_Resume.pdf</strong></span>
+            </div>
+
+            <div class="resume-actions-group">
+              <a href="assets/documents/Pankaj_Upadhyay_Resume.pdf" class="btn btn-primary" download="Pankaj_Upadhyay_Resume.pdf" title="Download Official Resume PDF">
+                <span>Download Resume (PDF)</span>
+                <svg class="btn-icon btn-icon-down" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+                </svg>
+              </a>
+
+              <button id="openResumeBtn" class="btn btn-secondary" title="Preview Resume in Modal Window">
+                <span>View Full Resume</span>
+                <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                  <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd" />
+                </svg>
+              </button>
+
+              <a href="assets/documents/Pankaj_Upadhyay_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" title="Open PDF in new browser tab">
+                <span>Open in Tab</span>
+                <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z" />
+                  <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Document Preview Card -->
+          <div class="resume-preview-card">
+            <div class="doc-top-bar">
+              <span class="doc-type-chip">PDF DOCUMENT</span>
+              <span class="doc-meta-info">Size: ~200 KB &bull; Verified</span>
+            </div>
+
+            <h4 class="doc-title-main">Pankaj Upadhyay &mdash; Curriculum Vitae</h4>
+
+            <ul class="doc-summary-bullets">
+              <li><strong>Contact:</strong> Kushinagar, UP &bull; pankajupadhyay.dev@gmail.com</li>
+              <li><strong>Degree:</strong> Diploma in Computer Science &amp; Engineering (08/2024&ndash;Present)</li>
+              <li><strong>School:</strong> Mahamaya Polytechnic of IT, Bansi, Siddharth Nagar</li>
+              <li><strong>Core Skills:</strong> Python, Django, SQLite, HTML5, CSS3, JavaScript, Git &amp; GitHub</li>
+              <li><strong>Key Project:</strong> HemoCampus (Blood Bank Management System)</li>
+              <li><strong>Award:</strong> Best Project Award for HemoCampus Web System</li>
+            </ul>
+
+            <div style="margin-top: 0.5rem; padding-top: 1rem; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.8125rem; color: var(--text-muted);">Relative Link Safe:</span>
+              <a href="My_Resume/Pankaj Upadhyay Resume (2).pdf" target="_blank" rel="noopener noreferrer" style="font-size: 0.8125rem; color: var(--accent-cyan); text-decoration: underline;" title="Alternative direct link to original document folder">Original Folder Path</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------------------
+         Section 9: Contact (Honest & Direct Communication)
+         ---------------------------------------------------------------------- -->
+    <section id="contact" class="section" aria-label="Contact Information">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Get in Touch</div>
+          <h2 class="section-title">Let&rsquo;s Connect &amp; <span class="gradient-text">Collaborate</span></h2>
+          <p class="section-desc">Open for internships, junior software roles, and collaborative projects. Direct and transparent communication.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Verified Direct Channels -->
+          <div class="contact-channels-card">
+            <h3 class="contact-channels-title">Direct Contact Channels</h3>
+            <p class="contact-channels-desc">
+              Reach out directly through email, connect on LinkedIn, or review my repository contributions on GitHub.
+            </p>
+
+            <div class="channel-items-list">
+              <!-- Email -->
+              <div class="channel-item">
+                <div class="channel-left">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="channel-label">Email Address</div>
+                    <div class="channel-val">pankajupadhyay.dev@gmail.com</div>
+                  </div>
+                </div>
+                <button class="copy-btn copy-email-trigger" title="Copy email address to clipboard">Copy</button>
+              </div>
+
+              <!-- Phone -->
+              <div class="channel-item">
+                <div class="channel-left">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="channel-label">Phone Contact</div>
+                    <div class="channel-val"><a href="tel:+917393834932">+91 7393834932</a></div>
+                  </div>
+                </div>
+                <a href="tel:+917393834932" class="copy-btn" title="Call directly">Call</a>
+              </div>
+
+              <!-- Location -->
+              <div class="channel-item">
+                <div class="channel-left">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="channel-label">Location</div>
+                    <div class="channel-val">Kushinagar, Uttar Pradesh, India</div>
+                  </div>
+                </div>
+                <span style="font-size: 0.775rem; color: var(--text-muted);">PIN: 274302</span>
+              </div>
+
+              <!-- GitHub -->
+              <div class="channel-item">
+                <div class="channel-left">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="channel-label">GitHub Profile</div>
+                    <div class="channel-val">Code-Pankaj-dev</div>
+                  </div>
+                </div>
+                <a href="https://github.com/Code-Pankaj-dev" target="_blank" rel="noopener noreferrer" class="copy-btn" title="Open GitHub profile">Visit</a>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="channel-item">
+                <div class="channel-left">
+                  <div class="channel-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.97 0 1.75-.79 1.75-1.76s-.78-1.75-1.75-1.75a1.75 1.75 0 0 0-1.75 1.75c0 .97.78 1.76 1.75 1.76m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="channel-label">LinkedIn Profile</div>
+                    <div class="channel-val">pankaj-dev12</div>
+                  </div>
+                </div>
+                <a href="https://www.linkedin.com/in/pankaj-dev12" target="_blank" rel="noopener noreferrer" class="copy-btn" title="Open LinkedIn profile">Connect</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Inquiry Composer (Honest & Direct Client-Side UX) -->
+          <div class="inquiry-composer-card">
+            <h3 class="composer-title">Compose Quick Inquiry</h3>
+            <p class="composer-desc">
+              Prepare a pre-filled email inquiry. Clicking launch opens your preferred mail client immediately with your details organized. No fake backend submission.
+            </p>
+
+            <form id="inquiryComposerForm" novalidate>
+              <div class="composer-group">
+                <label for="composerName" class="composer-label">Your Name or Organization</label>
+                <input type="text" id="composerName" class="composer-input" placeholder="e.g. Recruiter / Engineering Manager" required>
+              </div>
+
+              <div class="composer-group">
+                <label for="composerType" class="composer-label">Inquiry Purpose</label>
+                <select id="composerType" class="composer-select">
+                  <option value="Internship Opportunity">Developer Internship Opportunity</option>
+                  <option value="Junior Developer Role">Junior Full-Stack / Backend Role</option>
+                  <option value="Project Collaboration">Open-Source / Project Collaboration</option>
+                  <option value="General Technical Inquiry">General Technical Discussion</option>
+                </select>
+              </div>
+
+              <div class="composer-group">
+                <label for="composerNotes" class="composer-label">Brief Message / Context</label>
+                <textarea id="composerNotes" class="composer-textarea" placeholder="Describe the role, timeline, or project requirements..."></textarea>
+              </div>
+
+              <div class="composer-note">
+                <svg width="15" height="15" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+                </svg>
+                <span>Generates an authentic mailto link to <strong>pankajupadhyay.dev@gmail.com</strong></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.5rem;">
+                <span>Launch Email Client</span>
+                <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo" aria-label="Return to top">
+            <div class="logo-badge" aria-hidden="true">PU</div>
+            <div class="logo-text">
+              <span class="logo-name">Pankaj Upadhyay</span>
+              <span class="logo-role">Python &amp; Django</span>
+            </div>
+          </a>
+          <p class="footer-tagline">
+            Building reliable backend architectures, structured relational database systems, and accessible web experiences.
+          </p>
+        </div>
+
+        <!-- Quick Navigation Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#home" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Me</a></li>
+            <li><a href="#skills" class="footer-link">Technical Skills</a></li>
+            <li><a href="#projects" class="footer-link">Featured Projects</a></li>
+            <li><a href="#journey" class="footer-link">Development Journey</a></li>
+            <li><a href="#education" class="footer-link">Education</a></li>
+          </ul>
+        </div>
+
+        <!-- Credentials & Socials -->
+        <div>
+          <h4 class="footer-col-title">Connect &amp; Documents</h4>
+          <ul class="footer-links-list">
+            <li><a href="assets/documents/Pankaj_Upadhyay_Resume.pdf" class="footer-link" download="Pankaj_Upadhyay_Resume.pdf">Download Resume (PDF)</a></li>
+            <li><a href="https://github.com/Code-Pankaj-dev" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/pankaj-dev12" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn Profile</a></li>
+            <li><a href="https://hemocampus.onrender.com/" target="_blank" rel="noopener noreferrer" class="footer-link">HemoCampus Demo</a></li>
+            <li><a href="mailto:pankajupadhyay.dev@gmail.com" class="footer-link">Send Email</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="currentYear">2026</span> Pankaj Upadhyay. All rights reserved.</p>
+        <a href="#home" class="back-to-top-btn" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       Resume Modal Viewer (In-Page Accessible Dialog)
+       ======================================================================== -->
+  <div id="resumeModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="resumeModalTitle">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="resumeModalTitle" class="modal-title">Pankaj Upadhyay &mdash; Official Resume Preview</h3>
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <a href="assets/documents/Pankaj_Upadhyay_Resume.pdf" class="btn btn-secondary btn-sm" download="Pankaj_Upadhyay_Resume.pdf" title="Download Resume">
+            <span>Download</span>
+          </a>
+          <button id="closeResumeBtn" class="modal-close-btn" aria-label="Close resume preview">
+            <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <iframe src="assets/documents/Pankaj_Upadhyay_Resume.pdf" class="resume-iframe" title="Pankaj Upadhyay Resume PDF Viewer"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
